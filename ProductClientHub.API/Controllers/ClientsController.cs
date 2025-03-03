@@ -25,6 +25,7 @@ namespace ProductClientHub.API.Controllers
         }
 
         [HttpGet]
+        [Route("{id}")]
         public IActionResult GetById(Guid id)
         {
             return Ok();
