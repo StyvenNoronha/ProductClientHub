@@ -10,10 +10,7 @@ namespace ProductClientHub.Exceptions.ExcptionsBase
             _errors = errorMessages;
         }
 
-        public override List<string> GetErrors()
-        {
-            return _errors;
-        }
+        public override List<string> GetErrors() => _errors;
 
         public override HttpStatusCode GetHttpStatusCode() => HttpStatusCode.BadRequest;
     }
